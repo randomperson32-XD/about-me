@@ -1,0 +1,162 @@
+:root {
+    --bg-color: #e3f2f0;
+    --container-bg: white;
+    --text-color: #3e3e3e;
+    --heading-color: #1a1a1a;
+    --accent-color: #4a7f76;
+    --accent-hover: #4a7f7a;
+    --box-bg: #f0fffb;
+    --border-color: #4a7f6b;
+    --shadow: rgba(0,0,0,0.05);
+}
+
+.dark-mode {
+    --bg-color: #121212;
+    --container-bg: #1e1e1e;
+    --text-color: #e0e0e0;
+    --heading-color: #ffffff;
+    --accent-color: #81c7bc;
+    --accent-hover: #5da096;
+    --box-bg: #2d2d2d;
+    --border-color: #81c7bc;
+    --shadow: rgba(0,0,0,0.5);
+}
+
+body {
+    font-family: 'Poppins', sans-serif; 
+    font-size: 16px; 
+    text-align: center;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 50px 20px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.container {
+    position: relative;
+    max-width: 600px;
+    margin: 0 auto;
+    background: var(--container-bg);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px var(--shadow);
+    transition: background-color 0.3s ease;
+}
+
+h1 {
+    font-size: 3em;
+    margin: 10px 0;
+    color: var(--heading-color);
+}
+
+h3 {
+    font-size: 1.5em;
+    margin-top: 40px;
+    color: var(--accent-color);
+}
+
+p {
+    line-height: 1.8em;
+    margin: 15px 0;
+}
+
+.profile-info {
+    font-style: italic;
+    color: #888;
+    font-weight: 300;
+}
+
+.links a, .fav-songs-link {
+    display: inline-block;
+    margin: 5px 10px;
+    padding: 8px 15px;
+    text-decoration: none;
+    color: var(--accent-color);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.links a:hover, .fav-songs-link:hover {
+    background-color: var(--accent-color);
+    color: var(--container-bg);
+    border-color: var(--accent-color);
+}
+
+/* this keeps your social links in a nice row instead of a vertical list */
+.link-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5px;
+    width: 100%;
+}
+
+.ebs {
+    display: block;
+    font-weight: 700;
+    text-decoration: underline wavy var(--accent-color);
+    margin-bottom: 5px;
+}
+
+.ebs-desc {
+    font-size: 0.9em;
+    color: #888;
+    font-weight: 300;
+    margin-top: 0;
+}
+
+/* centering the heading inside the links box */
+.links h3 {
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+/* making sure paragraph text doesn't push alignment off-center */
+.projects p {
+    margin: 5px 0;
+    width: 100%;
+}
+
+/* ensuring everything inside boxes stays centered */
+.projects, .links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    padding: 20px;
+    background: var(--box-bg);
+    border-radius: 15px;
+    transition: background-color 0.3s ease;
+}
+
+.theme-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: var(--box-bg);
+    border: 1px solid var(--border-color);
+    color: var(--accent-color);
+    padding: 6px 15px;
+    border-radius: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.8em;
+    font-weight: 600;
+    cursor: pointer;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    outline: none;
+}
+
+.theme-btn:hover {
+    background-color: var(--accent-color);
+    color: var(--container-bg);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px var(--shadow);
+}
+
+.theme-btn:active {
+    transform: translateY(0);
+}

@@ -3,117 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
     <title>about me</title>
-    <style>
-        body {
-            font-family: 'Poppins', sans-serif; 
-            font-size: 16px; 
-            text-align: center;
-            background-color: #f8f9fa;
-            color: #3e3e3e;
-            margin: 0;
-            padding: 50px 20px;
-        }
-
-        .container {
-            max-width: 600px;
-            margin: 0 auto;
-            background: white;
-            padding: 40px;
-            border-radius: 20px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
-        }
-
-        h1 {
-            font-size: 3em;
-            margin: 10px 0;
-            color: #1a1a1a;
-        }
-
-        h3 {
-            font-size: 1.5em;
-            margin-top: 40px;
-            color: #4a7f76;
-        }
-
-        p {
-            line-height: 1.8em;
-            margin: 15px 0;
-        }
-
-        .profile-info {
-            font-style: italic;
-            color: #888;
-            font-weight: 300;
-        }
-
-        .links a, .songs-link {
-            display: inline-block;
-            margin: 5px 10px;
-            padding: 8px 15px;
-            text-decoration: none;
-            color: #4a7f7b;
-            border: 1px solid #4a7f6b;
-            border-radius: 8px;
-            transition: all 0.3s ease;
-        }
-
-        .links a:hover, .fav-songs-link:hover {
-            background-color: #4a7f7a;
-            color: white;
-        }
-
-        .ebs {
-            display: block;
-            font-weight: 700;
-            text-decoration: underline wavy #4a7f76;
-            margin-bottom: 5px;
-        }
-
-        .ebs-desc {
-            font-size: 0.9em;
-            color: #666;
-            font-weight: 300;
-            margin-top: 0;
-        }
-
-        .projects {
-            margin-top: 30px;
-            padding: 20px;
-            background: #f0fffb;
-            border-radius: 15px;
-        }
-    </style>
 </head>
 <body>
 
 <div class="container">
+    <button class="theme-btn" id="theme-btn" onclick="toggleTheme()">dark mode</button>
     <p class="profile-info">randomperson32 (he/him)</p>
     <h1>hi</h1>
     
     <p>no idea why i'm not using strawpage like anyone else but whatever</p>
-    <p><strong>fandoms:</strong> osc, murder drones</p>
-    
-    <p>fav songs:</p>
-    <a href="https://music.youtube.com/playlist?list=PLhs_wCzTryojo6V-W3UO1_PLjW0GeoHNQ&si=GN10gR20XN9DasAk" class="fav-songs-link">🎵 my fav songs (yt music)</a>
+
+    <div class="projects">
+        <p><strong>fandoms:</strong> osc, murder drones</p>
+    </div>
+
+    <div class="projects">
+        <a href="https://music.youtube.com/playlist?list=PLhs_wCzTryojo6V-W3UO1_PLjW0GeoHNQ&si=GN10gR20XN9DasAk" class="fav-songs-link">🎵 my fav songs (yt music)</a>
+    </div>
 
     <div class="links">
         <h3>links</h3>
-        <a href="https://youtube.com/@randomperson32.mp4">youtube</a>
-        <a href="https://github.com/randomperson32-XD">github</a>
-        <a href="https://www.tiktok.com/@randomperson32xd">tiktok</a>
-        <a href="https://x.com/randomper32txt">twitter</a>
+        <div class="link-buttons">
+            <a href="https://youtube.com/@randomperson32.mp4">youtube</a>
+            <a href="https://github.com/randomperson32-XD">github</a>
+            <a href="https://www.tiktok.com/@randomperson32xd">tiktok</a>
+            <a href="https://x.com/randomper32txt">twitter</a>
+        </div>
     </div>
 
     <div class="projects">
         <h3>projects</h3>
-        <span class="ebs">entertainment boardcast general (coming soon)</span>
+        <span class="ebs">entertainment broadcast general (coming soon)</span>
         <p class="ebs-desc">an analog horror, like local58 and channel 7</p>
     </div>
 </div>
 
+<script src="js/script.js"></script>
 </body>
 </html>
